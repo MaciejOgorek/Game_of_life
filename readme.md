@@ -11,11 +11,16 @@ Avaible cell states: dead (0), alive (1)
 Rules of transition:
 
 -Every dead cell (state 0) which has 3 alive neighbors (cells in state 1) is "born" (changes state from 0 to 1 and becomes "alive").
+
 -Every alive cell (state 1) which has more than 3 alive neighbors (cells in state 1) dies beacuse of overcrowd (changes state form 1 to 0 and becomes "dead").
+
 -Every alive cell (state 1) which has 2 or 3 alive neighbors (cells in state 1) stays alive (does not change state).
+
 -Every alive cell (state 1) which has 1 or 0 alive neighbors (cells in state 1) dies (chenges state from 1 to 0).
 
+
 Program starts with one of declared initial statuses:
+
 -constant
 
 ![constant](https://user-images.githubusercontent.com/61821034/112970449-7c129000-914e-11eb-87ce-89562fd930fc.PNG)
